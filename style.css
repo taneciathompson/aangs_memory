@@ -1,0 +1,407 @@
+body{
+    display: flex;
+    background: url(images/back.jpg) no-repeat center;
+    background-size: cover;
+    flex-direction: column;
+}
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+}
+img{
+    height: 200px;
+    width:200px;
+}
+.hidden{
+    display: none;
+}
+button{
+
+    width: 60px;
+    height: 20px;
+}
+h1{
+    color: blueviolet;
+    text-align: center;
+}
+.score{
+  height: 200px;
+  width: 100px;
+  border: 1px solid black;
+}
+@media only screen and (max-width:500px){
+    
+    
+  }
+  /* @media(min-width: 501px) and (max-width: 800px){
+    h3{
+      margin-top: 81px;
+      text-align: center;
+    }
+    h1{
+      text-indent: 30px;
+    }
+    .mid{
+      height: 167px;
+    }
+    .mid p{
+      font-size: 14px;
+      margin-top: 14px;
+    }
+    p{
+      font-size: 11px;
+    }
+    #pic{
+      display: none;
+    }
+    #leftpic{
+      width:100%;
+    }
+    .left{
+      margin-top: 10px;
+      height: 300px;
+    }
+    .right{
+      margin-top: 10px;
+      height: 300px;
+    }
+    li{
+      float: left;
+      margin-left: 57px;
+    }
+    h2{
+      margin-top: 52px;
+      color: lightgray;
+      text-align: center;
+    }
+    .mid3{
+      height: 278px;
+    }
+    .left p{
+      font-size: 14px;
+      text-align: center;
+  
+    }
+    .right p{
+      font-size: 14px;
+      text-align: left;
+    }
+    h3{
+      margin-top: 20px;
+    }
+    #leftpic h2{
+      margin-top:135px;
+      color: black;
+    }
+    .last{
+      height: 44px;
+    }
+    #searchBar{
+      height: 20px;
+      width:80%;
+      border: 1px solid black;
+      margin-top: 20px;
+      background-color: white;
+      margin-left: 40px;
+    }
+    button{
+      margin-left: 578px;
+    }
+  }
+  @media(min-width:801px) and (max-width: 937px){
+    h3{
+      margin-top: 81px;
+      text-align: center;
+    }
+    h1{
+      text-indent: 30px;
+    }
+    .mid{
+      height: 167px;
+    }
+    .mid p{
+      font-size: 14px;
+      margin-top: 14px;
+    }
+    p{
+      font-size: 11px;
+    }
+    #leftpic{
+      width:50%;
+    }
+    .left{
+      margin-top: 10px;
+      height: 300px;
+    }
+    .right{
+      margin-top: 10px;
+      height: 300px;
+    }
+    li{
+      float: left;
+      margin-left: 69px;
+    }
+    h2{
+      margin-top: 52px;
+      color: lightgray;
+      text-align: center;
+    }
+    .mid3{
+      height: 278px;
+    }
+    .left p{
+      font-size: 14px;
+      text-align: center;
+  
+    }
+    .right p{
+      font-size: 14px;
+      text-align: left;
+    }
+    h3{
+      margin-top: 20px;
+    }
+    #leftpic h2{
+      margin-top:135px;
+      color: black;
+    }
+    .last{
+      height: 44px;
+    }
+    #searchBar{
+      height: 20px;
+      width:80%;
+      border: 1px solid black;
+      margin-top: 20px;
+      background-color: white;
+      margin-left: 40px;
+    }
+    button{
+      margin-left: 686px;
+    }
+    .leftSec p{
+      font-size: 14px;
+    }
+  }
+  @media(min-width: 938px) and (max-width: 1100px){
+    h3{
+      margin-top: 81px;
+      text-align: center;
+    }
+    .mid{
+      height: 167px;
+    }
+    .mid p{
+      font-size: 14px;
+      margin-top: 14px;
+    }
+    p{
+      font-size: 16px;
+    }
+    #leftpic{
+      width:50%;
+    }
+    .left{
+      margin-top: 10px;
+      height: 300px;
+    }
+    .right{
+      margin-top: 10px;
+      height: 300px;
+    }
+    li{
+      float: left;
+      margin-left: 114px;
+    }
+    h2{
+      margin-top: 52px;
+      color: lightgray;
+      text-align: center;
+    }
+    .mid3{
+      height: 278px;
+    }
+    .left p{
+      font-size: 14px;
+      text-align: center;
+  
+    }
+    .right p{
+      font-size: 14px;
+      text-align: left;
+    }
+    #leftpic h3{
+      margin-top: 5px;
+    }
+    #leftpic h2{
+      margin-top:135px;
+      color: black;
+    }
+    .last{
+      height: 44px;
+    }
+    #searchBar{
+      height: 20px;
+      width:80%;
+      border: 1px solid black;
+      margin-top: 20px;
+      background-color: white;
+      margin-left: 80px;
+    }
+    button{
+      margin-left: 687px;
+    }
+    .leftSec p{
+      font-size: 15px;
+    }
+  }
+  @media(min-width: 1101px) and (max-width: 1250px){
+    h3{
+      margin-top: 81px;
+      text-align: center;
+    }
+    .mid{
+      height: 167px;
+    }
+    .mid p{
+      font-size: 14px;
+      margin-top: 14px;
+    }
+    p{
+      font-size: 16px;
+    }
+    #leftpic{
+      width:50%;
+    }
+    .left{
+      margin-top: 10px;
+      height: 300px;
+    }
+    .right{
+      margin-top: 10px;
+      height: 300px;
+    }
+    li{
+      float: left;
+      margin-left: 114px;
+    }
+    h2{
+      margin-top: 52px;
+      color: lightgray;
+      text-align: center;
+    }
+    .mid3{
+      height: 278px;
+    }
+    .left p{
+      font-size: 14px;
+      text-align: center;
+  
+    }
+    .right p{
+      font-size: 14px;
+      text-align: left;
+    }
+    #leftpic h3{
+      margin-top: 5px;
+    }
+    #leftpic h2{
+      margin-top:135px;
+      color: black;
+    }
+    .last{
+      height: 44px;
+    }
+    #searchBar{
+      height: 20px;
+      width:80%;
+      border: 1px solid black;
+      margin-top: 20px;
+      background-color: white;
+      margin-left: 108px;
+    }
+    button{
+      margin-left: 937px;
+    }
+    .leftSec p{
+      font-size: 17px;
+    }
+  }
+  @media(min-width:1251px) and (max-width: 1466px){
+    h3{
+      margin-top: 81px;
+      text-align: center;
+    }
+    .mid{
+      height: 167px;
+    }
+    .mid p{
+      font-size: 14px;
+      margin-top: 14px;
+    }
+    p{
+      font-size: 16px;
+    }
+    #leftpic{
+      width:50%;
+    }
+    .left{
+      margin-top: 10px;
+      height: 300px;
+    }
+    .right{
+      margin-top: 10px;
+      height: 300px;
+    }
+    li{
+      float: left;
+      margin-left: 137px;
+    }
+    h2{
+      margin-top: 52px;
+      color: lightgray;
+      text-align: center;
+    }
+    .mid3{
+      height: 278px;
+    }
+    .left p{
+      font-size: 14px;
+      text-align: center;
+  
+    }
+    .right p{
+      font-size: 14px;
+      text-align: left;
+    }
+    #leftpic h3{
+      margin-top: 5px;
+    }
+    #leftpic h2{
+      margin-top:135px;
+      color: black;
+    }
+    .last{
+      height: 44px;
+    }
+    #searchBar{
+      height: 20px;
+      width:80%;
+      border: 1px solid black;
+      margin-top: 20px;
+      background-color: white;
+      margin-left: 108px;
+    }
+    button{
+      margin-left: 1020px;
+    }
+    .leftSec p{
+      font-size: 17px;
+    }
+  }
+  
+  
+   */
