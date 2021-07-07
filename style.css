@@ -1,6 +1,6 @@
 body{
     display: flex;
-    background: url(images/back.jpg) no-repeat center;
+    background: url(/matching-card-bootcamp/aangs_memory/images/back.jpg) no-repeat center;
     background-size: cover;
     flex-direction: column;
 }
