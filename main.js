@@ -7,43 +7,43 @@ document.addEventListener('DOMContentLoaded', () =>{
     const cardArray = [
         {
             name: 'Aang' ,
-            img:'/images/Aang.png'
+            img: '../img/Aang.png'
         },
         {
             name: 'Aang' ,
-            img: 'images/Aang.png'
+            img: '../img/Aang.png'
         },
         {
             name: 'Zuko' ,
-            img: 'images/Zuko.webp'
+            img: '../img/Zuko.webp'
         },
         {
             name: 'Zuko' ,
-            img: 'images/Zuko.webp'
+            img: '../img/zuko.webp'
         },
         {
             name: 'Katara' ,
-            img: 'images/katara.jpg' 
+            img: '../img/katara.jpg' 
         },
         {
             name: 'Katara' ,
-            img: 'images/katara.jpg'
+            img: '../img/katara.jpg'
         },
         {
             name: 'Sokka' ,
-            img: 'images/sokka.jpg'
+            img: '../img/sokka.jpg'
         },
         {
             name: 'Sokka' ,
-            img: 'images/sokka.jpg'
+            img: '../img/sokka.jpg'
         },
         {
             name: 'Toph' ,
-            img: 'images/Toph.jpg'
+            img: '../img/Toph.jpg'
         },
         {
             name: 'Toph' ,
-            img: 'images/Toph.jpg'
+            img: '../img/Toph.jpg'
         }
     ]
     //shuffles cards
@@ -59,21 +59,14 @@ document.addEventListener('DOMContentLoaded', () =>{
     function makeBoard() {
        for (let i = 0; i < cardArray.length; i++) {
            let match = document.createElement('img')
-       match.setAttribute('src', 'images/appa.png')
+       match.setAttribute('src', '../img/appa.png')
        match.setAttribute('data-id', i)
        match.addEventListener('click', flipCard)
         grid.appendChild(match)
        }
-      
+       //looks for matches
     }
-     //looks for matches
-    let score = 0 
-    let cardAmount = 10
-
-
      function checkForMatch() {
-         let scoreElem = document.querySelector("#wins")
-         let cardsElem = document.querySelector('#moves')
          let matches = document.querySelectorAll('img')
          const optionOneId = cardsChosenId[0]
          const optionTwoId = cardsChosenId[1]
@@ -81,19 +74,16 @@ document.addEventListener('DOMContentLoaded', () =>{
              alert('You have a match!')
              matches[optionOneId].classList.add("hidden")
              matches[optionTwoId].classList.add("hidden")
-             matchesWon.push(cardsChosen)  
-             scoreElem.innerHTML = score += 2
-             cardsElem.innerHTML = cardAmount -= 2
+             matchesWon.push(cardsChosen)
 
-         }
-         else{
-             matches[optionOneId].setAttribute('src', 'images/appa.png')
-             matches[optionTwoId].setAttribute('src', 'images/appa.png')
+         }else{
+             matches[optionOneId].setAttribute('src', '../img/appa.png')
+             matches[optionTwoId].setAttribute('src', '../img/appa.png')
              alert('Not a Match, Try Again!')
          }
          cardsChosen = []
          cardsChosenId = []
-         winningDisplay.textContent = matchesWon.length
+         winningDisplay.textcontent = matchesWon.length
          if (matchesWon.length === cardArray.length/2)
             alert('Hooray! You found all the matches!!')
      }
@@ -119,3 +109,4 @@ document.addEventListener('DOMContentLoaded', () =>{
  function reset() {
      location.reload()
  }
+
